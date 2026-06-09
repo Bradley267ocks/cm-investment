@@ -1,0 +1,8 @@
+{
+  "name": "CM Investment",
+  "description": "Professional ceiling, painting, and tiling services for residential and commercial spaces in South Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
