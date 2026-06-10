@@ -9,23 +9,23 @@ import { Phone, Mail, MessageSquare, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white relative overflow-hidden">
-      <div className="max-w-[1216px] mx-auto px-4 md:px-8">
-        <div className="text-center mb-16">
+    <section id="contact" className="section-padding bg-white relative overflow-hidden">
+      <div className="container-custom">
+        <div className="text-center mb-16 px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-blue-600 font-bold tracking-widest uppercase text-xs mb-4 block">Contact Us</span>
+            <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Contact Us</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 mb-6 font-display">Get a Free Quotation</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
               Ready to transform your property? Contact CM Investment today for professional services and a free quotation.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 md:px-0">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

@@ -16,36 +16,36 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-white">
-      <div className="max-w-[1216px] mx-auto px-4 md:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <section id="about" className="section-padding bg-white">
+      <div className="container-custom">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:w-1/2"
+            className="w-full lg:w-1/2"
           >
-            <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+            <div className="rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/5 border border-gray-100">
               <img 
-                src="/src/assets/images/ceiling_project_1781026216943.png" 
+                src="https://i.ibb.co/p6yVnHsx/about-nutec-construction-png-1781022720284-home-building.jpg" 
                 alt="Our Work Quality" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover aspect-[4/3] md:aspect-auto"
               />
             </div>
           </motion.div>
 
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-blue-600 font-bold tracking-widest uppercase text-xs mb-4 block">About Our Company</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
-                Quality You Can Trust <br />
+              <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">About Our Company</span>
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-[1.2]">
+                Quality You Can Trust <br className="hidden md:block" />
                 at <span className="text-blue-600">CM Investment</span>
               </h2>
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 mb-10 leading-relaxed">
                 CM Investment specializes in ceiling installations, skimming, painting, and tiling services. We are committed to delivering high-quality workmanship, attention to detail, and reliable service that transforms residential and commercial spaces.
               </p>
             </motion.div>

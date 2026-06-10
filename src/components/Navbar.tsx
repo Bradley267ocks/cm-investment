@@ -30,12 +30,14 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav shadow-md py-2' : 'bg-transparent py-4'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-custom">
         <div className="flex justify-between items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <span className={`font-display font-bold text-xl tracking-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-              CM INVESTMENT
-            </span>
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <img 
+              src="https://i.ibb.co/Z1kSgZhZ/1000485562-removebg-preview.png" 
+              alt="CM Investment Logo" 
+              className="h-14 md:h-20 w-auto object-contain transition-all"
+            />
           </div>
 
           {/* Desktop Menu */}

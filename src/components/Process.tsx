@@ -18,23 +18,23 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-16 md:py-24 bg-gray-950 overflow-hidden relative">
-      <div className="max-w-[1216px] mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center mb-16">
+    <section id="process" className="section-padding bg-gray-950 overflow-hidden relative">
+      <div className="container-custom relative z-10">
+        <div className="text-center mb-16 px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-blue-500 font-bold tracking-widest uppercase text-xs mb-4 block">Work Strategy</span>
+            <span className="text-blue-500 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Work Strategy</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Our Process</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
               From the initial consultation to the final brush stroke, we maintain clear communication and expert management.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-4 md:px-0">
           {steps.map((step, index) => (
             <motion.div
               key={index}

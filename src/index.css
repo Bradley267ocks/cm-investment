@@ -14,17 +14,27 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased overflow-x-hidden;
+  }
+
+  /* Responsive Typography Base */
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-balance;
   }
 }
 
 .glass-nav {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  @apply bg-white/90 backdrop-blur-md;
 }
 
-.text-gradient {
-  background: linear-gradient(to right, #2563EB, #1E40AF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32;
+}
+
+.container-custom {
+  @apply max-w-[1216px] mx-auto px-4 md:px-8;
 }

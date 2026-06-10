@@ -20,14 +20,14 @@ const Hero = () => {
       {/* Clean Background Image with Subtle Overlay - Reduced Opacity */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/hero_construction_1781026203533.png" 
+          src="https://i.ibb.co/bR5yFZFs/the-hero-image.png" 
           alt="Professional Construction Work" 
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-gray-950 via-gray-950/80 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-[1216px] mx-auto px-4 md:px-8 py-16 lg:py-24">
+      <div className="relative z-10 w-full container-custom py-12 md:py-20 lg:py-24">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Main Content Area */}
           <motion.div
@@ -36,17 +36,17 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-8 flex flex-col items-start"
           >
-            <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-md">
+            <div className="inline-block px-4 py-1.5 mb-6 text-[10px] sm:text-xs font-bold tracking-[0.2em] text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-md">
               Reliable Construction Services
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
               Professional <br className="hidden sm:block" />
               <span className="text-blue-500">Ceiling, Painting</span> <br className="hidden sm:block" />
               & Tiling Services
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
               Quality workmanship, reliable service, and beautiful finishes for homes and businesses throughout South Africa. We bring excellence to every renovation project.
             </p>
 

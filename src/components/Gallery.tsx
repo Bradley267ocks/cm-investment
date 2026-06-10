@@ -11,11 +11,11 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const projects = [
-    { id: 1, title: 'Luxury Living Ceiling', category: 'Ceiling', image: '/src/assets/images/ceiling_project_1781026216943.png' },
+    { id: 1, title: 'Luxury Living Ceiling', category: 'Ceiling', image: 'https://i.ibb.co/bR5yFZFs/the-hero-image.png' },
     { id: 2, title: 'Modern Bathroom Tiling', category: 'Tiling', image: '/src/assets/images/tiling_project_1781026229802.png' },
-    { id: 3, title: 'Internal Wall Painting', category: 'Painting', image: '/src/assets/images/painting_project_1_1781026246832.png' },
-    { id: 4, title: 'Exterior Finish', category: 'Renovation', image: '/src/assets/images/painting_project_2_1781026261498.png' },
-    { id: 5, title: 'Commercial Office Ceiling', category: 'Ceiling', image: '/src/assets/images/hero_construction_1781026203533.png' },
+    { id: 3, title: 'Professional Ventilation', category: 'Renovation', image: 'https://i.ibb.co/qMvSmPdL/istockphoto-1470745396-612x612-ventilation.jpg' },
+    { id: 4, title: 'Air Conditioning Install', category: 'Renovation', image: 'https://i.ibb.co/GvMM8vN8/Gemini-Generated-Image-jcwnnmjcwnnmjcwn-aircon.png' },
+    { id: 5, title: 'Commercial Office Ceiling', category: 'Ceiling', image: 'https://i.ibb.co/p6yVnHsx/about-nutec-construction-png-1781022720284-home-building.jpg' },
     { id: 6, title: 'Full Interior Renovation', category: 'Renovation', image: '/src/assets/images/painting_project_1_1781026246832.png' },
   ];
 
@@ -32,22 +32,22 @@ const Gallery = () => {
   };
 
   return (
-    <section id="projects" className="py-16 md:py-24 bg-white overflow-hidden">
-      <div className="max-w-[1216px] mx-auto px-4 md:px-8">
-        <div className="mb-12">
+    <section id="projects" className="section-padding bg-white overflow-hidden">
+      <div className="container-custom">
+        <div className="mb-12 px-4 md:px-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-blue-600 font-bold tracking-widest uppercase text-xs mb-4 block">Our Work</span>
+            <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Our Work</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 font-display">
               Project Showcase
             </h2>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
